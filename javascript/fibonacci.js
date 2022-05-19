@@ -1,6 +1,19 @@
 function fibonacci(num) {
-  // type your code here
+  let arr = [0, 1];
+
+
+  for (let i = 2; i <= num; i++) {
+    let newNum = (arr[i - 1] + arr[i - 2])
+    console.log(newNum)
+
+    arr.push(newNum)
+
+  }
+
+  return arr[num]
+
 }
+
 
 if (require.main === module) {
   // add your own tests in here
